@@ -1,19 +1,21 @@
 <div class="site-header">
-	<div align="center">{{ site.title }}</div>
 	
+	<div class="title-header">{{ site.title }}|{{site.profession}}</div>
 	<nav class="site-nav">
 	
       <a href="" class="menu-icon">
-	  
-        <i class="fa fa-navicon fa-lg"></i>
+		<i class="fa fa-navicon fa-lg"></i>
       </a>
       <div class="trigger">
-	  
         {% for link in site.links %}
-          <a class="page-link" target="{% if link.external %}_blank{% else %}_top{% endif %}"
-             href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{link.name}}</a>
+			<a class="page-link" target="{% if link.external %}_blank{% else %}_top{% endif %}"
+			href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">
+				{{link.name}}
+			</a>
         {% endfor %}
+		<a class="page-link" href="/archive">Archive</a>
       </div>
+	  
     </nav>
 
 </div>
