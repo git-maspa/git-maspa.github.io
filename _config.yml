@@ -22,7 +22,6 @@ links:
   - name:         Artstation
     url:          https://www.artstation.com/maspa
     external:     true
-
 # Build settings
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
